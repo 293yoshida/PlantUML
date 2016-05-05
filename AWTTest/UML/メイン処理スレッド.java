@@ -8,15 +8,15 @@ end partition
 
 if "スレッド停止フラグ" as while then
 partition "run"
-	--> [true]  "メインスレッド初期化"
-
-
+	--> [true]  "計算処理"
+	--> "更新処理"
+	--> "描画"
 	--> while
+end partition
 else
 	--> [false] "終了処理"
 end if
 
-end partition
 
 --> (*)
 end partition
